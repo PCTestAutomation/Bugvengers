@@ -8,8 +8,11 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Options;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
@@ -27,6 +30,7 @@ import com.automation.functions.RestClientWrapper;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 import io.appium.java_client.android.AndroidDriver;
@@ -45,6 +49,12 @@ public class BaseFixture {
 	protected static ThreadLocal<WebDriverWait> wait = new ThreadLocal<WebDriverWait>();
 	protected static ThreadLocal<SoftAssert> soft = new ThreadLocal<SoftAssert>();
 	protected static ThreadLocal<String> passScreenshotReq = new ThreadLocal<String>();
+	protected static ThreadLocal<ChromeOptions> chromeOptions = ThreadLocal.withInitial(() -> {
+		return null;
+	});
+	protected static ThreadLocal<FirefoxOptions> fireFoxOptions = ThreadLocal.withInitial(() -> {
+		return null;
+	});
 
 	public static RestClientWrapper restClient;
 	public static String baseUrl;
@@ -68,12 +78,12 @@ public class BaseFixture {
 		switch (browser) {
 		case "chrome":
 			webDriver = ThreadLocal.withInitial(() -> {
-				return new ChromeDriver();
+				return WebDriverManager.chromedriver().create();
 			});
 			break;
 		case "fireFox":
 			webDriver = ThreadLocal.withInitial(() -> {
-				return new FirefoxDriver();
+				return WebDriverManager.firefoxdriver().create();
 			});
 			break;
 		default:
@@ -81,6 +91,18 @@ public class BaseFixture {
 		}
 
 	}
+	public void setWebDriver(ChromeOptions options) {
+		WebDriverManager.chromedriver().setup();
+			webDriver = ThreadLocal.withInitial(() -> {
+				return new ChromeDriver(options);
+			});
+	}
+	public void setWebDriver(FirefoxOptions options) {
+		WebDriverManager.firefoxdriver().setup();
+		webDriver = ThreadLocal.withInitial(() -> {
+			return new FirefoxDriver(options);
+		});
+}
 
 	public Properties getProperties() {
 		return prop.get();
@@ -139,6 +161,30 @@ public class BaseFixture {
 	public String getPassScreenshotFlag() {
 		return passScreenshotReq.get();
 	}
+	
+	public void setChromeOptions() {
+		chromeOptions = ThreadLocal.withInitial(() -> {
+			return new ChromeOptions();
+		});
+			
+	}
+	
+	public ChromeOptions getChromeOptions() {
+		return chromeOptions.get();
+	}
+	public void setFireFoxOptions() {
+		fireFoxOptions = ThreadLocal.withInitial(() -> {
+			return new FirefoxOptions();
+		});
+			
+	}
+	
+	public FirefoxOptions getFirefoxOptions() {
+		return fireFoxOptions.get();
+	}
+	
+	
+	
 
 	public void setPassScreenshotFlag(String passScreenshotFlag) {
 		passScreenshotReq.set(passScreenshotFlag);
@@ -179,8 +225,21 @@ public class BaseFixture {
 
 		}
 
-		if (testType.equals("Web")) {
-			setWebDriver(platformName);
+		if (testType.equalsIgnoreCase("Web")) {
+			// add chrome options
+			if (platformName.equalsIgnoreCase("chrome"))
+			{
+				setChromeOptions();
+				getChromeOptions().addArguments("--incognito");
+				setWebDriver(getChromeOptions());
+			} else if(platformName.equalsIgnoreCase("fireFox"))
+			{
+				setFireFoxOptions();
+				getFirefoxOptions().addArguments("-private");
+				setWebDriver(getFirefoxOptions());
+			}
+
+			//setWebDriver(platformName);
 			context.setAttribute("WebDriver", getWebDriver());
 
 		} else if (testType.equals("Mobile"))
@@ -283,7 +342,9 @@ public class BaseFixture {
 				getMobileDriver().quit();
 		} else if (getTestType().equals("Web")) {
 			if (getWebDriver() != null)
+			{
 				getWebDriver().quit();
+				}
 		}
 
 	}

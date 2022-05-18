@@ -1,103 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="19362" started-at="2022-05-18T14:25:47 IST" finished-at="2022-05-18T14:26:06 IST">
+  <suite name="Suite" duration-ms="19036" started-at="2022-05-18T15:56:36 IST" finished-at="2022-05-18T15:56:55 IST">
     <groups>
     </groups>
-    <test name="APITest" duration-ms="1205" started-at="2022-05-18T14:25:47 IST" finished-at="2022-05-18T14:25:48 IST">
-      <class name="com.automation.testcases.api.DummyTestCase">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automation.testcases.api.DummyTestCase@57f23557]" name="beforeTest" is-config="true" duration-ms="759" started-at="2022-05-18T14:25:47 IST" finished-at="2022-05-18T14:25:48 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[API]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[androidOnly]]>
-              </value>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[MobileOnly]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[MobileOnly]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[androidOnly]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[androidOnly]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[iOSOnly]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[iOSOnly]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[MobileOnly]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[org.testng.TestRunner@58fdd99]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.automation.testcases.api.DummyTestCase@57f23557]" name="beforeClass" is-config="true" duration-ms="1" started-at="2022-05-18T14:25:48 IST" finished-at="2022-05-18T14:25:48 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[API]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.automation.testcases.api.DummyTestCase@57f23557]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-05-18T14:25:48 IST" finished-at="2022-05-18T14:25:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dummyTestCase()[pri:0, instance:com.automation.testcases.api.DummyTestCase@57f23557]" name="dummyTestCase" duration-ms="112" started-at="2022-05-18T14:25:48 IST" description="Dummy API Description" finished-at="2022-05-18T14:25:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dummyTestCase -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automation.testcases.api.DummyTestCase@57f23557]" name="afterMethod" is-config="true" duration-ms="2" started-at="2022-05-18T14:25:48 IST" finished-at="2022-05-18T14:25:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.automation.testcases.api.DummyTestCase@57f23557]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-05-18T14:25:48 IST" finished-at="2022-05-18T14:25:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.automation.testcases.api.DummyTestCase -->
-    </test> <!-- APITest -->
-    <test name="HomepageTest" duration-ms="9268" started-at="2022-05-18T14:25:47 IST" finished-at="2022-05-18T14:25:56 IST">
+    <test name="HomepageTestChrome" duration-ms="7682" started-at="2022-05-18T15:56:36 IST" finished-at="2022-05-18T15:56:44 IST">
       <class name="com.automation.testcases.web.HomePageTest">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automation.testcases.web.HomePageTest@33b37288]" name="beforeTest" is-config="true" duration-ms="3431" started-at="2022-05-18T14:25:47 IST" finished-at="2022-05-18T14:25:51 IST">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automation.testcases.web.HomePageTest@40f08448]" name="beforeTest" is-config="true" duration-ms="2297" started-at="2022-05-18T15:56:36 IST" finished-at="2022-05-18T15:56:39 IST">
           <params>
             <param index="0">
               <value>
@@ -151,14 +61,14 @@
             </param>
             <param index="10">
               <value>
-                <![CDATA[org.testng.TestRunner@6b1274d2]]>
+                <![CDATA[org.testng.TestRunner@69b794e2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.automation.testcases.web.HomePageTest@33b37288]" name="beforeClass" is-config="true" duration-ms="0" started-at="2022-05-18T14:25:51 IST" finished-at="2022-05-18T14:25:51 IST">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.automation.testcases.web.HomePageTest@40f08448]" name="beforeClass" is-config="true" duration-ms="1" started-at="2022-05-18T15:56:39 IST" finished-at="2022-05-18T15:56:39 IST">
           <params>
             <param index="0">
               <value>
@@ -169,27 +79,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.automation.testcases.web.HomePageTest@33b37288]" name="beforeMethod" is-config="true" duration-ms="1952" started-at="2022-05-18T14:25:51 IST" finished-at="2022-05-18T14:25:52 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.automation.testcases.web.HomePageTest@40f08448]" name="beforeMethod" is-config="true" duration-ms="1908" started-at="2022-05-18T15:56:39 IST" finished-at="2022-05-18T15:56:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifySearch()[pri:0, instance:com.automation.testcases.web.HomePageTest@33b37288]" name="verifySearch" duration-ms="2487" started-at="2022-05-18T14:25:52 IST" description="Enter Search keyword in searchbox and perform search" finished-at="2022-05-18T14:25:55 IST">
+        <test-method status="PASS" signature="verifySearch()[pri:0, instance:com.automation.testcases.web.HomePageTest@40f08448]" name="verifySearch" duration-ms="2306" started-at="2022-05-18T15:56:41 IST" description="Enter Search keyword in searchbox and perform search" finished-at="2022-05-18T15:56:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearch -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automation.testcases.web.HomePageTest@33b37288]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-05-18T14:25:56 IST" finished-at="2022-05-18T14:25:56 IST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automation.testcases.web.HomePageTest@40f08448]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-05-18T15:56:44 IST" finished-at="2022-05-18T15:56:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.automation.testcases.web.HomePageTest@33b37288]" name="afterTest" is-config="true" duration-ms="372" started-at="2022-05-18T14:25:56 IST" finished-at="2022-05-18T14:25:56 IST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.automation.testcases.web.HomePageTest@40f08448]" name="afterTest" is-config="true" duration-ms="90" started-at="2022-05-18T15:56:44 IST" finished-at="2022-05-18T15:56:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.automation.testcases.web.HomePageTest -->
-    </test> <!-- HomepageTest -->
-    <test name="Pixel 2 API 26" duration-ms="19362" started-at="2022-05-18T14:25:47 IST" finished-at="2022-05-18T14:26:06 IST">
+    </test> <!-- HomepageTestChrome -->
+    <test name="Pixel 2 API 26" duration-ms="19036" started-at="2022-05-18T15:56:36 IST" finished-at="2022-05-18T15:56:55 IST">
       <class name="com.automation.testcases.mobile.Flow1Test">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automation.testcases.mobile.Flow1Test@130f889]" name="beforeTest" is-config="true" duration-ms="11020" started-at="2022-05-18T14:25:47 IST" finished-at="2022-05-18T14:25:58 IST">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automation.testcases.mobile.Flow1Test@1176dcec]" name="beforeTest" is-config="true" duration-ms="9554" started-at="2022-05-18T15:56:36 IST" finished-at="2022-05-18T15:56:46 IST">
           <params>
             <param index="0">
               <value>
@@ -243,14 +153,14 @@
             </param>
             <param index="10">
               <value>
-                <![CDATA[org.testng.TestRunner@7bc1a03d]]>
+                <![CDATA[org.testng.TestRunner@3f200884]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.automation.testcases.mobile.Flow1Test@130f889]" name="beforeClass" is-config="true" duration-ms="1" started-at="2022-05-18T14:25:58 IST" finished-at="2022-05-18T14:25:58 IST">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.automation.testcases.mobile.Flow1Test@1176dcec]" name="beforeClass" is-config="true" duration-ms="0" started-at="2022-05-18T15:56:46 IST" finished-at="2022-05-18T15:56:46 IST">
           <params>
             <param index="0">
               <value>
@@ -261,11 +171,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.automation.testcases.mobile.Flow1Test@130f889]" name="beforeMethod" is-config="true" duration-ms="126" started-at="2022-05-18T14:25:58 IST" finished-at="2022-05-18T14:25:58 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.automation.testcases.mobile.Flow1Test@1176dcec]" name="beforeMethod" is-config="true" duration-ms="111" started-at="2022-05-18T15:56:46 IST" finished-at="2022-05-18T15:56:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="flow1Test()[pri:0, instance:com.automation.testcases.mobile.Flow1Test@130f889]" name="flow1Test" duration-ms="7232" started-at="2022-05-18T14:25:58 IST" description="Performing Drag and Drop" finished-at="2022-05-18T14:26:05 IST">
+        <test-method status="FAIL" signature="flow1Test()[pri:0, instance:com.automation.testcases.mobile.Flow1Test@1176dcec]" name="flow1Test" duration-ms="8446" started-at="2022-05-18T15:56:46 IST" description="Performing Drag and Drop" finished-at="2022-05-18T15:56:54 IST">
           <exception class="java.lang.NoSuchMethodException">
             <message>
               <![CDATA[com.automation.pages.mobile.DragandDropPage.<init>(io.appium.java_client.android.AndroidDriver, com.aventstack.extentreports.ExtentTest)]]>
@@ -306,11 +216,11 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flow1Test -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automation.testcases.mobile.Flow1Test@130f889]" name="afterMethod" is-config="true" duration-ms="85" started-at="2022-05-18T14:26:06 IST" finished-at="2022-05-18T14:26:06 IST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.automation.testcases.mobile.Flow1Test@1176dcec]" name="afterMethod" is-config="true" duration-ms="93" started-at="2022-05-18T15:56:55 IST" finished-at="2022-05-18T15:56:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.automation.testcases.mobile.Flow1Test@130f889]" name="afterTest" is-config="true" duration-ms="572" started-at="2022-05-18T14:26:06 IST" finished-at="2022-05-18T14:26:06 IST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.automation.testcases.mobile.Flow1Test@1176dcec]" name="afterTest" is-config="true" duration-ms="548" started-at="2022-05-18T15:56:55 IST" finished-at="2022-05-18T15:56:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
