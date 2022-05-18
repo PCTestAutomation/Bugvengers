@@ -9,25 +9,43 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">HomepageTestChrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7,682</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Pixel 2 API 26</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">19,036</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">26,718</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">HomepageTestChrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">208,677</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">HomepageTestChrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automation.testcases.web.HomePageTest</td><td><a href="#m0">verifySearch</a></td><td rowspan="1">1652869601010</td><td rowspan="1">2306</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Pixel 2 API 26 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.automation.testcases.mobile.Flow1Test</td><td><a href="#m1">flow1Test</a></td><td rowspan="1">1652869606469</td><td rowspan="1">8446</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">HomepageTestChrome &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.automation.testcases.web.HomePageTest</td><td><a href="#m0">afterMethod</a></td><td rowspan="1">1652878070636</td><td rowspan="1">1</td></tr><tr><th colspan="4">HomepageTestChrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automation.testcases.web.HomePageTest</td><td><a href="#m1">verifySearch</a></td><td rowspan="1">1652877869174</td><td rowspan="1">200711</td></tr></tbody>
 </table>
-<h2>HomepageTestChrome</h2><h3 id="m0">com.automation.testcases.web.HomePageTest#verifySearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Pixel 2 API 26</h2><h3 id="m1">com.automation.testcases.mobile.Flow1Test#flow1Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodException: com.automation.pages.mobile.DragandDropPage.&lt;init&gt;(io.appium.java_client.android.AndroidDriver, com.aventstack.extentreports.ExtentTest)
-	at java.lang.Class.getConstructor0(Class.java:3082)
-	at java.lang.Class.getConstructor(Class.java:1825)
-	at com.automation.pages.mobile.ViewsPage.getPage(ViewsPage.java:83)
-	at com.automation.pages.mobile.ViewsPage.scrollToElementAndClick(ViewsPage.java:74)
-	at com.automation.testcases.mobile.Flow1Test.flow1Test(Flow1Test.java:39)
+<h2>HomepageTestChrome</h2><h3 id="m0">com.automation.testcases.web.HomePageTest#afterMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	failed to click on the target element -  element click intercepted: Element &lt;input data-cy=&quot;toCity&quot; id=&quot;toCity&quot; type=&quot;text&quot; class=&quot;fsw_inputField lineHeight36 latoBlack font30&quot; readonly=&quot;&quot; value=&quot;Bengaluru&quot;&gt; is not clickable at point (776, 284). Other element would receive the click: &lt;input type=&quot;text&quot; autocomplete=&quot;off&quot; aria-autocomplete=&quot;list&quot; aria-controls=&quot;react-autowhatever-1&quot; class=&quot;react-autosuggest__input react-autosuggest__input--open react-autosuggest__input--focused&quot; placeholder=&quot;To&quot; value=&quot;&quot;&gt;
+  (Session info: chrome=101.0.4951.64)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-C02D733KMD6M.local&apos;, ip: &apos;fe80:0:0:0:10b0:5aef:51f5:5590%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/yc/cpj0dgpd3gz...}, goog:chromeOptions: {debuggerAddress: localhost:54947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 652a2ca41c2d821e85d360898306c2c9,
+	Timed Out waiting for visibility of passed webelement,
+	Timed Out waiting for clickability of passed webelement,
+	failed to click on the target element -  no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//div[@aria-label=&apos;Friday, 20 May 2022&apos;]&quot;}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-C02D733KMD6M.local&apos;, ip: &apos;fe80:0:0:0:10b0:5aef:51f5:5590%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/yc/cpj0dgpd3gz...}, goog:chromeOptions: {debuggerAddress: localhost:54947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 652a2ca41c2d821e85d360898306c2c9
+*** Element info: {Using=xpath, value=.//div[@aria-label=&apos;Friday, 20 May 2022&apos;]},
+	failed to click on the target element -  element click intercepted: Element &lt;a class=&quot;primaryBtn font24 latoBold widget...Btn &quot;&gt;Search&lt;/a&gt; is not clickable at point (618, 448). Other element would receive the click: &lt;div class=&quot;hsBackDrop&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=101.0.4951.64)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-C02D733KMD6M.local&apos;, ip: &apos;fe80:0:0:0:10b0:5aef:51f5:5590%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/yc/cpj0dgpd3gz...}, goog:chromeOptions: {debuggerAddress: localhost:54947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 652a2ca41c2d821e85d360898306c2c9
+	at com.automation.base.BaseFixture.afterMethod(BaseFixture.java:334)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.automation.testcases.web.HomePageTest#verifySearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

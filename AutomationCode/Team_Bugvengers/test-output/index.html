@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.automation.testcases.mobile.Flow1Test" hash-for-method="flow1Test">flow1Test</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -131,36 +117,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.automation.testcases.mobile.Flow1Test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="flow1Test">
-                  </a> <!-- flow1Test -->
-                  <span class="method-name">flow1Test</span>
-                  <div class="stack-trace">java.lang.NoSuchMethodException: com.automation.pages.mobile.DragandDropPage.&lt;init&gt;(io.appium.java_client.android.AndroidDriver, com.aventstack.extentreports.ExtentTest)
-	at java.lang.Class.getConstructor0(Class.java:3082)
-	at java.lang.Class.getConstructor(Class.java:1825)
-	at com.automation.pages.mobile.ViewsPage.getPage(ViewsPage.java:83)
-	at com.automation.pages.mobile.ViewsPage.scrollToElementAndClick(ViewsPage.java:74)
-	at com.automation.testcases.mobile.Flow1Test.flow1Test(Flow1Test.java:39)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Performing Drag and Drop)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -199,25 +155,6 @@
       &lt;class name=&quot;com.automation.testcases.web.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- HomepageTestChrome --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;APITest&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;testType&quot; value=&quot;API&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.automation.testcases.api.DummyTestCase&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- APITest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Pixel 2 API 26&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;emulator&quot; value=&quot;true&quot;/&gt;
-    &lt;parameter name=&quot;passScreenshotFlag&quot; value=&quot;Yes&quot;/&gt;
-    &lt;parameter name=&quot;platformVersion&quot; value=&quot;8.0&quot;/&gt;
-    &lt;parameter name=&quot;testType&quot; value=&quot;Mobile&quot;/&gt;
-    &lt;parameter name=&quot;chromeDriverPort&quot; value=&quot;11000&quot;/&gt;
-    &lt;parameter name=&quot;platformName&quot; value=&quot;Android&quot;/&gt;
-    &lt;parameter name=&quot;deviceName&quot; value=&quot;Pixel_2_API_26&quot;/&gt;
-    &lt;parameter name=&quot;systemPort&quot; value=&quot;10000&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.automation.testcases.mobile.Flow1Test&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Pixel 2 API 26 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -230,12 +167,6 @@
             <ul>
               <li>
                 <span class="test-name">HomepageTestChrome (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">APITest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Pixel 2 API 26 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -261,20 +192,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'flow1Test')
-data.setCell(0, 2, 'com.automation.testcases.mobile.Flow1Test')
-data.setCell(0, 3, 8446);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySearch')
-data.setCell(1, 2, 'com.automation.testcases.web.HomePageTest')
-data.setCell(1, 3, 2306);
+data.setCell(0, 1, 'verifySearch')
+data.setCell(0, 2, 'com.automation.testcases.web.HomePageTest')
+data.setCell(0, 3, 200711);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -305,90 +232,27 @@ return data;
                 <span class="method-name">beforeTest(Web, androidOnly, chrome, MobileOnly, MobileOnly, androidOnly, androidOnly, iOSOnly, iOSOnly, Yes, o...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.testcases.api.DummyTestCase</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest(API, androidOnly, null, MobileOnly, MobileOnly, androidOnly, androidOnly, iOSOnly, iOSOnly, MobileOn...)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.testcases.mobile.Flow1Test</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest(Mobile, true, Android, 8.0, Pixel_2_API_26, 10000, 11000, iOSOnly, iOSOnly, Yes, org.testng.TestRunn...)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.testcases.api.DummyTestCase</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass(API)</span>
-                <span class="method-start">722 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">730 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">dummyTestCase</span>
-                <span class="method-start">731 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">1591 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">1599 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.testcases.web.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass(Web)</span>
-                <span class="method-start">2297 ms</span>
+                <span class="method-start">2182 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">2298 ms</span>
+                <span class="method-start">2187 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearch</span>
-                <span class="method-start">4206 ms</span>
+                <span class="method-start">6834 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">7587 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">7588 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.testcases.mobile.Flow1Test</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass(Mobile)</span>
-                <span class="method-start">9554 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">9554 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">flow1Test</span>
-                <span class="method-start">9665 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">18391 ms</span>
+                <span class="method-start">208296 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">18484 ms</span>
+                <span class="method-start">208301 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

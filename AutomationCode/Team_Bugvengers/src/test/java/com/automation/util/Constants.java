@@ -14,6 +14,17 @@ public class Constants {
 	public static final String PASS = "Pass";
 	public static final String FAIL = "Fail";
 	
+	//WebTest Data
+	
+	public static final String FROM_CITY="Mumbai";
+	public static final String TO_CITY="Pune";
+
+	
+	
+	
+	
+	
+	
 	
 	//TestData
 	

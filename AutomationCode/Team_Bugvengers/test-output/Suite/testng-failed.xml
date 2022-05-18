@@ -4,26 +4,21 @@
   <listeners>
     <listener class-name="com.automation.listeners.TestListener"/>
   </listeners>
-  <test thread-count="5" name="Pixel 2 API 26(failed)" parallel="tests">
-    <parameter name="emulator" value="true"/>
+  <test thread-count="5" name="HomepageTestChrome(failed)" parallel="tests">
     <parameter name="passScreenshotFlag" value="Yes"/>
-    <parameter name="platformVersion" value="8.0"/>
-    <parameter name="testType" value="Mobile"/>
-    <parameter name="chromeDriverPort" value="11000"/>
-    <parameter name="platformName" value="Android"/>
-    <parameter name="deviceName" value="Pixel_2_API_26"/>
-    <parameter name="systemPort" value="10000"/>
+    <parameter name="testType" value="Web"/>
+    <parameter name="platformName" value="chrome"/>
     <classes>
-      <class name="com.automation.testcases.mobile.Flow1Test">
+      <class name="com.automation.testcases.web.HomePageTest">
         <methods>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="afterTest"/>
-          <include name="flow1Test"/>
+          <include name="verifySearch"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.automation.testcases.mobile.Flow1Test -->
+      </class> <!-- com.automation.testcases.web.HomePageTest -->
     </classes>
-  </test> <!-- Pixel 2 API 26(failed) -->
+  </test> <!-- HomepageTestChrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->
