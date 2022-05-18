@@ -17,7 +17,7 @@ public class FlightDetails extends BaseWebPage {
 	
 	public void findFirstLowestFlight()
 	{
-		System.out.println(price.get(0).getText(););
+		System.out.println(price.get(0).getText());
 		
 	}
 	
