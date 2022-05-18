@@ -22,12 +22,5 @@
  			<class name="com.automation.testcases.mobile.Flow1Test"></class>
 		</classes>
 	</test>
-	<test name="HomepageTest">
-	<parameter name="passScreenshotFlag" value="Yes"/>
-  <parameter name="testType" value="Web" />
-  	<parameter name="platformName" value="chrome" />
-		<classes>
- 			<class name="com.automation.testcases.web.HomePageTest"></class>
-		</classes>
-	</test>
+	
 </suite> <!-- Suite -->
