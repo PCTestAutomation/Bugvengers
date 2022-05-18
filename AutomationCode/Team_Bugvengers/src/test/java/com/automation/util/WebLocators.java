@@ -12,7 +12,7 @@ public class WebLocators {
 	public static final String BACKDROP = "//div[@class='hsBackDrop']";
 	public static final String DATE="//div[ @class='DayPicker-Day DayPicker-Day--start DayPicker-Day--selected']";
 	public static final String DATE_PICKER="//div[ @class='DayPicker-Day DayPicker-Day--selected']";
-	public static final String DATEFUTURE=".//div[@aria-label='Fri May 20 2022']";
+	public static final String DATEFUTURE=".//div[@aria-label='Mon May 30 2022']";
 	
 	
 
