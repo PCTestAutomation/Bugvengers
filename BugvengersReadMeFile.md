@@ -24,3 +24,4 @@
 		Runtime reporting via Graffana and Influx
 		Report created by automation
 		Solution can be find from respective folder in GITHub: 
+		Tool used: Apache JMeter and Jenkins (Open Source)
