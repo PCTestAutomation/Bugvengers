@@ -27,7 +27,7 @@ public class Flow1Test extends BaseFixture {
 	}
 	
 	
-	@Test(testName="Flow 1 Test",description="Performing Drag and Drop")
+	@Test(testName="DummyMobileTest",description="Performing Drag and Drop")
 	public void flow1Test() throws Exception
 	{
 		

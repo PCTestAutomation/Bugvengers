@@ -7,7 +7,7 @@ import com.automation.pages.web.HomePage;
 
 public class HomePageTest extends BaseFixture {
 
-	@Test(testName = "verify search", description = "Enter Search keyword in searchbox and perform search")
+	@Test(testName = "DummyWebTest", description = "Enter Search keyword in searchbox and perform search")
 	public void verifySearch() {
 		HomePage homePage = new HomePage();
 		homePage.enterDataInSearchBox();

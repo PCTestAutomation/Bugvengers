@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -114,11 +114,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.automation.testcases.api.DummyTestCase" hash-for-method="dummyTestCase">dummyTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.automation.testcases.web.HomePageTest" hash-for-method="verifySearch">verifySearch</a> <!-- method navigator-link -->
@@ -169,23 +164,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.automation.testcases.api.DummyTestCase</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="dummyTestCase">
-                  </a> <!-- dummyTestCase -->
-                  <span class="method-name">dummyTestCase</span>
-                  <em>
-(Dummy API Description)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.automation.testcases.web.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -213,6 +191,14 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.automation.listeners.TestListener&quot;/&gt;
   &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;HomepageTestChrome&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;passScreenshotFlag&quot; value=&quot;Yes&quot;/&gt;
+    &lt;parameter name=&quot;testType&quot; value=&quot;Web&quot;/&gt;
+    &lt;parameter name=&quot;platformName&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.automation.testcases.web.HomePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HomepageTestChrome --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;APITest&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;testType&quot; value=&quot;API&quot;/&gt;
     &lt;classes&gt;
@@ -232,14 +218,6 @@
       &lt;class name=&quot;com.automation.testcases.mobile.Flow1Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Pixel 2 API 26 --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;HomepageTest&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;passScreenshotFlag&quot; value=&quot;Yes&quot;/&gt;
-    &lt;parameter name=&quot;testType&quot; value=&quot;Web&quot;/&gt;
-    &lt;parameter name=&quot;platformName&quot; value=&quot;chrome&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.automation.testcases.web.HomePageTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- HomepageTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -251,13 +229,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
+                <span class="test-name">HomepageTestChrome (1 class)</span>
+              </li>
+              <li>
                 <span class="test-name">APITest (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Pixel 2 API 26 (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">HomepageTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -283,19 +261,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'flow1Test')
 data.setCell(0, 2, 'com.automation.testcases.mobile.Flow1Test')
-data.setCell(0, 3, 7232);
+data.setCell(0, 3, 8446);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifySearch')
 data.setCell(1, 2, 'com.automation.testcases.web.HomePageTest')
-data.setCell(1, 3, 2487);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'dummyTestCase')
-data.setCell(2, 2, 'com.automation.testcases.api.DummyTestCase')
-data.setCell(2, 3, 112);
+data.setCell(1, 3, 2306);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -333,6 +307,13 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.testcases.api.DummyTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(API, androidOnly, null, MobileOnly, MobileOnly, androidOnly, androidOnly, iOSOnly, iOSOnly, MobileOn...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.automation.testcases.mobile.Flow1Test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest(Mobile, true, Android, 8.0, Pixel_2_API_26, 10000, 11000, iOSOnly, iOSOnly, Yes, org.testng.TestRunn...)</span>
@@ -341,77 +322,73 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.testcases.api.DummyTestCase</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest(API, androidOnly, null, MobileOnly, MobileOnly, androidOnly, androidOnly, iOSOnly, iOSOnly, MobileOn...)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass(API)</span>
-                <span class="method-start">765 ms</span>
+                <span class="method-start">722 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">771 ms</span>
+                <span class="method-start">730 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dummyTestCase</span>
-                <span class="method-start">772 ms</span>
+                <span class="method-start">731 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">1195 ms</span>
+                <span class="method-start">1591 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">1199 ms</span>
+                <span class="method-start">1599 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.testcases.web.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass(Web)</span>
-                <span class="method-start">3431 ms</span>
+                <span class="method-start">2297 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">3432 ms</span>
+                <span class="method-start">2298 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearch</span>
-                <span class="method-start">5384 ms</span>
+                <span class="method-start">4206 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">8889 ms</span>
+                <span class="method-start">7587 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">8890 ms</span>
+                <span class="method-start">7588 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.testcases.mobile.Flow1Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass(Mobile)</span>
-                <span class="method-start">11020 ms</span>
+                <span class="method-start">9554 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">11021 ms</span>
+                <span class="method-start">9554 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">flow1Test</span>
-                <span class="method-start">11147 ms</span>
+                <span class="method-start">9665 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">18699 ms</span>
+                <span class="method-start">18391 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">18784 ms</span>
+                <span class="method-start">18484 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
